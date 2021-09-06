@@ -17,7 +17,7 @@ with request.urlopen('https://rws-cards-api.herokuapp.com/api/v1/cards') as resp
     else:
         print('An error occurred while attempting to retrieve data from the API.')
 
-intro = "Welcome to Jasiah's Mystical Tarot Reading!"
+intro = "Welcome to Ashley's Mystical Tarot Reading!"
 print("         _...._")
 print("       .`      `.")
 print("      / ***      \         The Crystal Ball")
