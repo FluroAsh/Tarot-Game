@@ -18,6 +18,17 @@ with request.urlopen('https://rws-cards-api.herokuapp.com/api/v1/cards') as resp
         print('An error occurred while attempting to retrieve data from the API.')
 
 intro = "Welcome to Jasiah's Mystical Tarot Reading!"
+print("         _...._")
+print("       .`      `.")
+print("      / ***      \         The Crystal Ball")
+print("     : **         :         says.........")
+print("     :            :        You don't really")
+print("      \          /       believe in fortunes")
+print("       `-.,,,,.-'              do you?")
+print("        _(    )_")
+print("       )        (")
+print("      (          )")
+print("       `-......-`lc\n")
 
 random_cards = []
 
@@ -44,7 +55,7 @@ class Card:
         self.meaning_rev = meaning_rev
         self.desc = desc
 
-player_name = Player(input("What is your name? "))
+player_name = Player(input("What is your name?: "))
 
 # Initialize our randomly generated cards (between 1-78)
 card1 = Card(random_cards[0]["name"], random_cards[0]["name_short"], random_cards[0]["value"], random_cards[0]["value_int"], random_cards[0]["suit"], random_cards[0]["type"], random_cards[0]["meaning_up"], random_cards[0]["meaning_rev"], random_cards[0]["desc"])
