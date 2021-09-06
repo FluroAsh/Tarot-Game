@@ -16,25 +16,20 @@ with request.urlopen('https://rws-cards-api.herokuapp.com/api/v1/cards') as resp
     else:
         print('An error occurred while attempting to retrieve data from the API.')
 
-# STUCTURE "nhits": 0, "cards": [{"name_short": "string", "name": "string", "value": "string", "value_int": 0, "type": "major", "meaning_up": "string", "meaning_rev": "string", "desc": "string"}]}
-
-# Gets our first card!
-# Need to look into how to implement this so we can assign it to our card class in a 3-card spread scenario... 
-# add an extra [] if you want to get a specific element in the list, i.e. ["desc"]
-print(data["cards"][0])
-
 intro = "Welcome to Jasiah's Mystical Tarot Reading!"
 
-# def recursive_items(data):
-#     for key, value in data.items():a
-#         if type(value) is dict:
-#             yield from recursive_items(value)
-#         else:
-#             yield (key, value)
+random_cards = []
+
+# Get's 3 RANDOM cards & their ATTRIBUTES
+for i in range(3): 
+    random_i = random.randint(1,78)
+    random_cards.append(data['cards'][random_i])
+
 
 class Player:
     def __init__(self, name):
         self.name = name 
+
 
 class Card:
     def __init__(self, name, name_short, value, value_int, suit, identifier, meaning_up, meaning_rev, desc):
@@ -49,3 +44,14 @@ class Card:
         self.desc = desc
 
 player_name = Player(input("What is your name? "))
+
+# Initialize our randomly generated cards (between 1-78)
+card1 = Card(random_cards[0]["name"], random_cards[0]["name_short"], random_cards[0]["value"], random_cards[0]["value_int"], random_cards[0]["suit"], random_cards[0]["type"], random_cards[0]["meaning_up"], random_cards[0]["meaning_rev"], random_cards[0]["desc"])
+card2 = Card(random_cards[1]["name"], random_cards[1]["name_short"], random_cards[1]["value"], random_cards[1]["value_int"], random_cards[1]["suit"], random_cards[1]["type"], random_cards[1]["meaning_up"], random_cards[1]["meaning_rev"], random_cards[1]["desc"])
+card3 = Card(random_cards[2]["name"], random_cards[2]["name_short"], random_cards[2]["value"], random_cards[2]["value_int"], random_cards[2]["suit"], random_cards[2]["type"], random_cards[2]["meaning_up"], random_cards[2]["meaning_rev"], random_cards[2]["desc"])
+
+
+# --- Tests --- #
+print(card1.name + '\n' + card1.desc)
+print(card2.name + '\n' + card2.desc)
+print(card3.name + '\n' + card3.desc)
