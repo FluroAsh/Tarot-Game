@@ -16,7 +16,7 @@ with request.urlopen('https://rws-cards-api.herokuapp.com/api/v1/cards') as resp
     else:
         print('An error occurred while attempting to retrieve data from the API.')
 
-data_structure = {"nhits": 0, "cards": [{"name_short": "string", "name": "string", "value": "string", "value_int": 0, "type": "major", "meaning_up": "string", "meaning_rev": "string", "desc": "string"}]}
+# STUCTURE "nhits": 0, "cards": [{"name_short": "string", "name": "string", "value": "string", "value_int": 0, "type": "major", "meaning_up": "string", "meaning_rev": "string", "desc": "string"}]}
 
 # Gets our first card!
 # Need to look into how to implement this so we can assign it to our card class in a 3-card spread scenario... 
