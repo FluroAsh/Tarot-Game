@@ -1,3 +1,4 @@
+import time
 import random
 import json
 from typing import Type
@@ -55,3 +56,4 @@ card3 = Card(random_cards[2]["name"], random_cards[2]["name_short"], random_card
 print(card1.name + '\n' + card1.desc)
 print(card2.name + '\n' + card2.desc)
 print(card3.name + '\n' + card3.desc)
+time.sleep(5)
