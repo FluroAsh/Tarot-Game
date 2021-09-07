@@ -5,6 +5,8 @@ This is my first little project as a part of my Codecademy syllabus (CS101). The
 which is available at: (https://app.swaggerhub.com/apis/ekswagger/rws-tarot_card_api/1.0.0). Classes are utilised more so to make the code more reusable in the future 
 should anyone wish to make further changes. 
 
+![screenshot1](https://user-images.githubusercontent.com/20517755/132276619-0325452a-fd91-4e6f-bba9-16a6f64ada52.PNG)
+
 Ultimately it's more of a narrative driven story telling experience, as opposed to just purely input, output -- with the goal to simulate more of an ominous 
 atmosphere as opposed to feeling overly 'gamey'. 
 
