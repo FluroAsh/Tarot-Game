@@ -34,7 +34,7 @@ random_cards = []
 
 # Get's 3 RANDOM cards & their ATTRIBUTES
 for i in range(3): 
-    random_i = random.randint(0,78)
+    random_i = random.randint(0,77)
     # Add code to PREVENT duplicates!!
     random_cards.append(data['cards'][random_i])
 
