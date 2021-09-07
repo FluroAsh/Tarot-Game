@@ -1,7 +1,7 @@
 <!-- ABOUT -->
 ## About the Project
 
-This is my first little project as a part of my Codecademy syllabus. The program was designed to retrieve data from the rws tarot card api 
+This is my first little project as a part of my Codecademy syllabus (CS101). The program was designed to retrieve data from the rws tarot card api 
 which is available at: (https://app.swaggerhub.com/apis/ekswagger/rws-tarot_card_api/1.0.0). Classes are utilised more so to make the code more reusable in the future 
 should anyone wish to make further changes. 
 
