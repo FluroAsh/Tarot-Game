@@ -19,6 +19,6 @@ It would also prove benefical to use a package such as matplotlib to arrange the
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@asheygthompson](https://twitter.com/ashleygthompson) - workashleythompson@gmail.com
+Contact Me: - [@asheygthompson](https://twitter.com/ashleygthompson) - workashleythompson@gmail.com
 
 Project Link: [https://github.com/FluroAsh/Tarot-Game](https://github.com/FluroAsh/Tarot-Game])
